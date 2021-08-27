@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#This script is intended to automate skipping the slave counter. Incase is the replication is broken due to duplicate key issue or missing data and if we are ok to skip the transaction we can use this script to skip the transaction on slave.
+#This script is intended to automate skipping the slave counter. 
+#Incase is the replication is broken due to duplicate key issue or missing data and if we are ok to skip the transaction.
+#This script will continue to skip the transaction util the issue is resolved.
 
 
 STOPSLAVE_CMD="STOP SLAVE;"
