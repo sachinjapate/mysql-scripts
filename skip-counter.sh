@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#This script is intended to automate skipping the slave counter. Incase is the replication is broken due to duplicate key issue or missing data and if we are ok to skip the transaction we can use this script to skip the transaction on slave.
+
+
 STOPSLAVE_CMD="STOP SLAVE;"
 STARTSLAVE_CMD="START SLAVE;"
 SKIP_COUNTER_CMD="SET GLOBAL SQL_SLAVE_SKIP_COUNTER = 1;"
